@@ -1,0 +1,150 @@
+
+/* commons */
+
+.btn {
+  display:block;
+  border-radius: 45px;
+  
+}
+.containers {
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 1000px;
+ }
+
+/* header top */
+header {
+  height: 650px;
+  background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg"); 
+  background-size: 1650px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+ } 
+
+.nav-right, .nav-left {
+  display: flex;
+}
+.head-top {
+  height: 80px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-img {
+  height: 20px;
+  width: auto;
+}
+
+nav {
+  height: 100%;
+  width: auto;
+  margin-right: 50px;
+}
+
+.head-nav  div {
+  text-align: center;
+  font-weight: bold;
+}
+
+.head-nav div:first-child {
+  font-size: 13px;
+ }
+.head-nav div:nth-child(2) {
+  font-size: 10px;
+ }
+
+.head-btn {
+  font-size: 12px;
+  background-color: #F79214;
+  padding: 12px 18px;
+  color:honeydew;
+}
+
+/* header-bottom */
+/* .head-bottom {
+  
+} */
+
+.head-bt-title  {
+  display: inline-block;
+  padding-top: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.head-bt-img {
+  padding-top: 30px; 
+  display: flex;
+  align-items: center;
+}
+
+.head-bt-img img:first-child, img:nth-child(2){
+  padding-right: 20px;
+}
+.head-bt-btn  {
+  padding-top: 20px;
+  display: flex;
+  font-size: 15px;
+}
+
+.head-bt-btn a:first-child {
+  padding: 17px 40px;
+  margin-right: 20px; 
+  color:white;
+  background-color:#F79214; 
+} 
+
+.head-bt-btn a:nth-child(2) {
+  padding: 17px 40px;
+  background-color:white; 
+  border: 1px solid #E0E0E0;
+}
+
+.head-bt-coment {
+  color: #A2A2A4;
+  opacity: 0.7;
+  line-height: 14px; 
+  font-size: 10px;  
+  padding-top: 70px; 
+}
+
+/* sec1 POTEPANとは */
+.sec2 {
+  background-color: #F79214;
+  color:white;
+  height:300px;
+}
+
+.sec2-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec2-coment {
+  width: 550px;
+}
+.sec2-coment h2 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+/* .sec1-coment p {
+  font-size: 20px;
+} */
+.sec2-btn{
+  font-weight: bold;
+  font-size: 21px;
+  background-color: white;
+  color:#F79214;
+  padding: 10px 70px;
+  text-align: center
+}
+.sec2-btn p:nth-child(2) {
+  font-size: 12px; 
+}
