@@ -29,7 +29,7 @@ body {
 /* float-btn */
 .float-btn {
   position: fixed;
-  top: 50%;
+  top: 85%;
   right: 3%;
   z-index: 10;
 }
@@ -38,8 +38,8 @@ body {
   width: 380px;
 }
 
-/* sec1 top */
-.sec1 {
+/* head top */
+header {
   height: auto;
   padding-bottom: 10px;
   background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg"); 
@@ -50,6 +50,7 @@ body {
 
  .head-top {
   height: 60px;
+  padding: 5px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +107,22 @@ nav {
   border-radius: 50px;
 }
 
-/* sec1 bottom */
+/* head bottom */
+.head-backimg-sm {
+  width: 100%;
+  position:absolute;
+  top: 60px;
+  right: 0;
+}
+.head-bt-cont {
+  z-index: 1;
+}
+
+.head-bt-left {
+  width:500px;
+  display: flex;
+  flex-direction: column;
+}
 
 .head-bt-title  {
   display: inline-block;
@@ -119,21 +135,27 @@ nav {
 .head-bt-img {
   padding-top: 30px; 
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.head-bt-img img:first-child, img:nth-child(2){
-  padding-right: 20px;
+.head-bt-img img:nth-child(1), img:nth-child(3) {
+  width: 25%;
 }
+
+.head-bt-img img:nth-child(2){
+  width: 40%;
+}
+
 .head-bt-btn  {
   padding-top: 20px;
   display: flex;
+  justify-content: space-between;
   font-size: 15px;
 }
 
 .head-bt-btn a:first-child {
   padding: 17px 40px;
-  margin-right: 20px; 
   color:white;
   background-color:#F79214; 
 } 
@@ -152,37 +174,29 @@ nav {
   padding-top: 70px; 
 }
 
-.sec1-cont {
-  z-index: 1;
-}
-
-.head-backimg-tab {
-  position:absolute;
-  display:none;
-}
-
-/* sec2 POTEPANとは */
-.sec2 {
+/* sec1 POTEPANとは */
+.sec1 {
   background-color: #F79214;
   color:white;
   height: auto;
   padding: 50px 0px;
 }
 
-.sec2-cont {
+.sec1-cont {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.sec2-coment {
+.sec1-coment {
   width: 550px;
 }
-.sec2-coment h2 {
+.sec1-coment h2 {
   font-size: 40px;
   padding-bottom: 20px;
 }
-.sec2-btn{
+.sec1-btn{
   font-weight: bold;
   font-size: 21px;
   background-color: white;
@@ -190,7 +204,7 @@ nav {
   padding: 10px 70px;
   text-align: center
 }
-.sec2-btn p:nth-child(2) {
+.sec1-btn p:nth-child(2) {
   font-size: 12px; 
 }
 
@@ -204,12 +218,6 @@ nav {
   .head-top {
     padding: 20px 30px;
   }
-  .nav-right-tab {
-    display: none; 
-  }
-  .head-backimg-tab {
-    display: none;
-  }
 }
 /* タブレット */
 @media( max-width:1100px) {
@@ -217,12 +225,11 @@ nav {
     width: 100%;
     padding: 0px 50px;
   }
-  .sec1 {
+  header {
     background-position: 70% -30%;
   }
   .head-top {
     background-color: white;
-    padding: 5px 30px;
   }
 
   .nav-right {
@@ -230,9 +237,64 @@ nav {
   
   }
 }
+@media(min-width:1101px) {
+  .nav-right-tab {
+    display: none; 
+  }
+}
 @media(max-width:950px) {
-  .sec2-cont {
+  .sec1-cont {
     flex-direction: column;
     height: 250px;
   }
+}
+/* スマートフォン */
+@media(min-width:601px) {
+  .head-backimg-sm {
+    display: none;
+  }
+}
+
+@media(max-width:600px) {
+  .float-btn {
+    position: fixed;
+    right: 0px;
+    width: 100%;
+    background-color:white;
+  }
+  
+  .float-btn img{
+    width: 100%;
+  }
+
+  .container {
+    padding: 0px 10px ;
+  }
+  header {
+    background-image: none;
+  }
+  .head-bt-cont {
+    margin-top: 300px;  
+  }
+  .head-bt-title {
+    font-size: 20px;
+  }
+  .head-bt-btn {
+    flex-direction: column;
+    text-align: center;
+  }
+  .head-bt-left {
+    width: 100%;
+  }
+  .sec1 {
+    padding: 50px  0px;
+  }
+  .sec1-coment {
+    width: auto;
+  }
+  .sec1-coment h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
 }
